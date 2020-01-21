@@ -1,22 +1,24 @@
 /** @format */
 import React from 'react';
-import { Card, CardContent } from '@material-ui/core';
+import { Card } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import TrainIcon from '@material-ui/icons/Train';
-import SecurityIcon from '@material-ui/icons/Security';
+import trainIcon from '../../assets/train.png';
+import searchIcon from '../../assets/search.png';
+import shieldIcon from '../../assets/shield.png';
+import articleIcon from '../../assets/article.png';
+import vpnIcon from '../../assets/vpn.png';
 
 const useStyles = makeStyles({
     card: {
-        width: 275,
+        padding: 8,
         cursor: 'pointer',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     icon: {
-        fontSize: 100,
-    },
-    content: {
-        display: 'flex',
-        height: '50%',
-        justifyContent: 'center',
+        width: 90,
+        height: 90,
     },
     container: {
         display: 'flex',
@@ -26,6 +28,9 @@ const useStyles = makeStyles({
     },
     a: {
         textDecoration: 'none',
+        textAlign: 'center',
+        color: '#666',
+        lineHeight: 2,
     },
 });
 
@@ -36,25 +41,41 @@ export default function Home() {
             <div className={classes.cardBox}>
                 <a className={classes.a} href="http://12306.huzhihang.site:8081/" target="__blank">
                     <Card className={classes.card}>
-                        <CardContent className={classes.content}>
-                            <TrainIcon className={classes.icon} />
-                        </CardContent>
-                        <CardContent className={classes.content}>
-                            <div>py12306刷票</div>
-                        </CardContent>
+                        <img src={trainIcon} className={classes.icon} />
                     </Card>
+                    <div>12306刷票</div>
+                </a>
+            </div>
+            <div className={classes.cardBox}>
+                <a className={classes.a} href="http://search.huzhihang.site:8081/" target="__blank">
+                    <Card className={classes.card}>
+                        <img src={searchIcon} className={classes.icon} />
+                    </Card>
+                    <div>bt搜索</div>
                 </a>
             </div>
             <div className={classes.cardBox}>
                 <a className={classes.a} href="http://monitor.huzhihang.site:8081/" target="__blank">
                     <Card className={classes.card}>
-                        <CardContent className={classes.content}>
-                            <SecurityIcon className={classes.icon} />
-                        </CardContent>
-                        <CardContent className={classes.content}>
-                            <div>监控系统</div>
-                        </CardContent>
+                        <img src={shieldIcon} className={classes.icon} />
                     </Card>
+                    <div>监控系统</div>
+                </a>
+            </div>
+            <div className={classes.cardBox}>
+                <a className={classes.a} href="http://blog.huzhihang.site/" target="__blank">
+                    <Card className={classes.card}>
+                        <img src={articleIcon} className={classes.icon} />
+                    </Card>
+                    <div>blog</div>
+                </a>
+            </div>
+            <div className={classes.cardBox}>
+                <a className={classes.a} href="https://orange-sky-6799.cross.workers.dev/" target="__blank">
+                    <Card className={classes.card}>
+                        <img src={vpnIcon} className={classes.icon} />
+                    </Card>
+                    <div>紧急翻墙</div>
                 </a>
             </div>
         </div>
