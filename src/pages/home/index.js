@@ -47,7 +47,7 @@ export default function Home() {
                 </a>
             </div>
             <div className={classes.cardBox}>
-                <a className={classes.a} href="http://search.huzhihang.site:8081/" target="__blank">
+                <a className={classes.a} href="http://bt.huzhihang.site:8081/" target="__blank">
                     <Card className={classes.card}>
                         <img src={searchIcon} className={classes.icon} />
                     </Card>
