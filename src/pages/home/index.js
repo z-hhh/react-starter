@@ -79,7 +79,7 @@ export default function Home() {
                 <Grid container spacing={3}>
                     {apps.map(app => (
                         <Grid item xs={4} lg={1} key={app.title}>
-                            <a className={classes.a} href={app.href} target="__blank">
+                            <a className={classes.a} href={app.href}>
                                 <Card className={classes.card}>
                                     <img src={app.icon} className={classes.icon} />
                                 </Card>
