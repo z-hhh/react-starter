@@ -43,7 +43,7 @@ const useStyles = makeStyles({
 const apps = [
     {
         title: '12306刷票',
-        href: 'http://12306.huzhihang.site:8081/',
+        href: 'http://192.168.50.130:8081/',
         icon: trainIcon,
     },
     {
@@ -53,7 +53,7 @@ const apps = [
     },
     {
         title: '监控系统',
-        href: 'http://monitor.huzhihang.site:8081/',
+        href: 'http://192.168.50.130:8080/',
         icon: shieldIcon,
     },
     {
