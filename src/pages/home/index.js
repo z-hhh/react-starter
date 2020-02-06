@@ -44,7 +44,7 @@ const useStyles = makeStyles({
 const apps = [
     {
         title: '12306刷票',
-        href: 'http://192.168.50.130:8081/',
+        href: 'http://192.168.50.130/',
         icon: trainIcon,
     },
     {
