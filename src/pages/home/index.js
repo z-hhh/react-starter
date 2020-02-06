@@ -8,6 +8,7 @@ import searchIcon from '../../assets/search.png';
 import shieldIcon from '../../assets/shield.png';
 import articleIcon from '../../assets/article.png';
 import vpnIcon from '../../assets/vpn.png';
+import routerIcon from '../../assets/router.png';
 
 const useStyles = makeStyles({
     card: {
@@ -50,6 +51,11 @@ const apps = [
         title: 'bt搜索',
         href: 'http://bt.huzhihang.site:8081/',
         icon: searchIcon,
+    },
+    {
+        title: 'OpenWrt',
+        href: 'http://192.168.50.131',
+        icon: routerIcon,
     },
     {
         title: '监控系统',
