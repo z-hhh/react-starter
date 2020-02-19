@@ -9,6 +9,7 @@ import shieldIcon from '../../assets/shield.png';
 import articleIcon from '../../assets/article.png';
 import vpnIcon from '../../assets/vpn.png';
 import routerIcon from '../../assets/router.png';
+import downloadIcon from '../../assets/download.png';
 
 const useStyles = makeStyles({
     card: {
@@ -71,6 +72,11 @@ const apps = [
         title: '紧急翻墙',
         href: 'https://orange-sky-6799.cross.workers.dev/',
         icon: vpnIcon,
+    },
+    {
+        title: '离线下载',
+        href: 'http://192.168.50.1:8081/downloadmaster/task.asp',
+        icon: downloadIcon,
     },
 ];
 
