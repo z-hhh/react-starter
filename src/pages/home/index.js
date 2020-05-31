@@ -1,15 +1,17 @@
 /** @format */
 import React from 'react';
 import { Card, Grid } from '@material-ui/core';
-import { Cat } from 'react-kawaii';
 import { makeStyles } from '@material-ui/core/styles';
-import trainIcon from '../../assets/train.png';
-import searchIcon from '../../assets/search.png';
-import shieldIcon from '../../assets/shield.png';
-import articleIcon from '../../assets/article.png';
-import vpnIcon from '../../assets/vpn.png';
-import routerIcon from '../../assets/router.png';
-import downloadIcon from '../../assets/download.png';
+import {
+    Router as RouterIcon,
+    Pageview as PageviewIcon,
+    Train as TrainIcon,
+    Security as SecurityIcon,
+    Book as BookIcon,
+    DirectionsCar as DirectionsCarIcon,
+    CloudDownload as CloudDownloadIcon,
+    Radio as RadioIcon,
+} from '@material-ui/icons';
 
 const useStyles = makeStyles({
     card: {
@@ -18,9 +20,7 @@ const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    icon: {
-        width: 90,
+        height: 90,
     },
     a: {
         textDecoration: 'none',
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
         justifyContent: 'center',
         alignItems: 'center',
         background: 'rgb(205, 236, 254)',
-        color: '#555',
+        color: '#bf0000',
     },
     content: {
         padding: 20,
@@ -45,38 +45,53 @@ const useStyles = makeStyles({
 const apps = [
     {
         title: '12306刷票',
-        href: 'http://192.168.50.130/',
-        icon: trainIcon,
+        href: 'http://192.168.50.60/',
+        icon: <TrainIcon fontSize="large" />,
     },
     {
-        title: 'bt搜索',
-        href: 'http://bt.huzhihang.site:8081/',
-        icon: searchIcon,
+        title: 'BT搜索',
+        href: 'http://192.168.50.60:8080/magnetw',
+        icon: <PageviewIcon fontSize="large" />,
     },
     {
         title: 'OpenWrt',
-        href: 'http://192.168.50.131',
-        icon: routerIcon,
+        href: 'http://192.168.50.66',
+        icon: <RouterIcon fontSize="large" />,
     },
     {
         title: '监控系统',
         href: 'http://192.168.50.130:8080/',
-        icon: shieldIcon,
+        icon: <SecurityIcon fontSize="large" />,
     },
     {
-        title: 'blog',
+        title: 'Blog',
         href: 'http://blog.huzhihang.site/',
-        icon: articleIcon,
+        icon: <BookIcon fontSize="large" />,
     },
     {
         title: '紧急翻墙',
         href: 'https://orange-sky-6799.cross.workers.dev/',
-        icon: vpnIcon,
+        icon: <DirectionsCarIcon fontSize="large" />,
     },
     {
-        title: '离线下载',
+        title: '下载大师',
         href: 'http://192.168.50.1:8081/downloadmaster/task.asp',
-        icon: downloadIcon,
+        icon: <CloudDownloadIcon fontSize="large" />,
+    },
+    {
+        title: 'Aria2',
+        href: 'http://192.168.50.66/ariang',
+        icon: <CloudDownloadIcon fontSize="large" />,
+    },
+    {
+        title: 'BaiduPcs',
+        href: 'http://192.168.50.66:5299/',
+        icon: <CloudDownloadIcon fontSize="large" />,
+    },
+    {
+        title: 'OpenClash',
+        href: 'http://192.168.50.66/luci-static/openclash/?hostname=192.168.50.66&port=9090&secret=123456#/proxies',
+        icon: <RadioIcon fontSize="large" />,
     },
 ];
 
@@ -85,16 +100,14 @@ export default function Home() {
     return (
         <div>
             <div className={classes.header}>
-                <Cat size={100} mood="happy" color="#596881" />
+                <h1>FBI WARNING</h1>
             </div>
             <div className={classes.content}>
                 <Grid container spacing={3}>
                     {apps.map(app => (
                         <Grid item xs={4} lg={1} key={app.title}>
                             <a className={classes.a} href={app.href}>
-                                <Card className={classes.card}>
-                                    <img src={app.icon} className={classes.icon} />
-                                </Card>
+                                <Card className={classes.card}>{app.icon}</Card>
                                 <div>{app.title}</div>
                             </a>
                         </Grid>
