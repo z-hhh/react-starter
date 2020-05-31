@@ -106,7 +106,7 @@ export default function Home() {
     return (
         <div>
             <div className={classes.header}>
-                <h1>FBI WARNING</h1>
+                <h1>UNIVERSE HUB</h1>
             </div>
             <div className={classes.content}>
                 <Grid container spacing={3}>
