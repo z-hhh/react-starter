@@ -11,6 +11,7 @@ import {
     DirectionsCar as DirectionsCarIcon,
     CloudDownload as CloudDownloadIcon,
     Radio as RadioIcon,
+    Home as HomeIcon,
 } from '@material-ui/icons';
 
 const useStyles = makeStyles({
@@ -43,6 +44,11 @@ const useStyles = makeStyles({
 });
 
 const apps = [
+    {
+        title: 'ESXI',
+        href: 'http://192.168.50.68/',
+        icon: <HomeIcon fontSize="large" />,
+    },
     {
         title: '12306刷票',
         href: 'http://192.168.50.60/',
