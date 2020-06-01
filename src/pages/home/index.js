@@ -12,6 +12,7 @@ import {
     CloudDownload as CloudDownloadIcon,
     Radio as RadioIcon,
     Home as HomeIcon,
+    Subscriptions as SubscriptionsIcon,
 } from '@material-ui/icons';
 import HeaderBgImg from '../../assets/nasa_tim_peake_spacewalk.jpg'
 
@@ -102,6 +103,11 @@ const apps = [
         title: 'OpenClash',
         href: 'http://192.168.50.66/luci-static/openclash/?hostname=192.168.50.66&port=9090&secret=123456#/proxies',
         icon: <RadioIcon fontSize="large" />,
+    },
+    {
+        title: 'AllTube',
+        href: 'https://hzh-alltube.herokuapp.com',
+        icon: <SubscriptionsIcon fontSize="large" />,
     },
 ];
 
