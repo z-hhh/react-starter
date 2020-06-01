@@ -13,6 +13,7 @@ import {
     Radio as RadioIcon,
     Home as HomeIcon,
 } from '@material-ui/icons';
+import HeaderBgImg from '../../assets/nasa_tim_peake_spacewalk.jpg'
 
 const useStyles = makeStyles({
     card: {
@@ -31,12 +32,15 @@ const useStyles = makeStyles({
     },
     header: {
         width: '100%',
-        height: 150,
+        height: 200,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        background: 'rgb(205, 236, 254)',
-        color: '#bf0000',
+        backgroundImage: `url(${HeaderBgImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: '#ffd500',
+        textShadow: '1px 1px 0 #fff, -1px -1px 0 #666',
     },
     content: {
         padding: 20,
