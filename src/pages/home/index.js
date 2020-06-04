@@ -80,7 +80,7 @@ const apps = [
     },
     {
         title: 'Aria2',
-        href: 'http://192.168.50.66/ariang',
+        href: 'http://192.168.50.60/ariang',
         icon: '📥',
     },
     {
