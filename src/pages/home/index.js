@@ -98,6 +98,11 @@ const apps = [
         href: 'https://hzh-alltube.herokuapp.com',
         icon: '📽️',
     },
+    {
+        title: 'SS配置转换',
+        href: 'http://192.168.50.60:10086',
+        icon: '⚙️',
+    },
 ];
 
 export default function Home() {
