@@ -40,7 +40,7 @@ const useStyles = makeStyles({
 const apps = [
     {
         title: 'ESXI',
-        href: 'http://192.168.50.68/',
+        href: 'https://v.home.app',
         icon: '🏠',
     },
     {
@@ -55,12 +55,12 @@ const apps = [
     },
     {
         title: 'OpenWrt',
-        href: 'http://192.168.50.66',
+        href: 'https://op.home.app',
         icon: '🕹️',
     },
     {
         title: '监控系统',
-        href: 'http://192.168.50.60:8081/',
+        href: 'https://cctv.home.app',
         icon: '👮',
     },
     {
