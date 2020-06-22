@@ -55,7 +55,7 @@ const apps = [
     },
     {
         title: 'OpenWrt',
-        href: 'https://192.168.50.66',
+        href: 'http://192.168.50.66',
         icon: '🕹️',
     },
     {
