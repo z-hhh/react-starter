@@ -100,7 +100,7 @@ const apps = [
     },
     {
         title: 'SS配置转换',
-        href: 'http://192.168.50.60:10086',
+        href: 'http://192.168.50.60/conv',
         icon: '⚙️',
     },
 ];
